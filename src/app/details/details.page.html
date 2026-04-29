@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-title><img src="\assets\icon\Theday5.jpg"/></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <br>
+ <img src={{getPicture()}}>
+ <br>
+ <div class="menu">
+
+<h2 class="title">{{getName()}}</h2>
+ 
+  <p>{{getDescription()}}</p>
+  <p>{{getPrice()}}</p>
+  <p>{{getAllergens()}}</p>
+  
+  <p class="al">1.Gluten 2.Crustacean 3.Egg 4.Fish 5.Nuts 6.Soya 7.Dairy 8.Mustard 9.Sesame 10.Sulpher 11.Lupin 12.Molluses 13.Celery 14. Peanuts</p>
+  <div class="but">
+  <ion-button class="buttonprop" fill="view" routerLink="/tabs/tab2">Return</ion-button>
+  <ion-button class="buttonbook" fill="view" routerLink="/tabs/tab3">Order</ion-button>
+  </div>
+  </div>
+</ion-content>

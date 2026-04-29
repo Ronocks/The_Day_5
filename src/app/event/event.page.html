@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+ <ion-buttons slot="start">
+   <ion-back-button></ion-back-button>
+</ion-buttons>
+  <ion-toolbar>
+    <ion-title>
+      <img src="\assets\icon\Theday5.jpg"/>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Event</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <h2 class="title">Book Event</h2>
+<div class="t3">
+    <div class="t2">
+  <p class="label">Full Name</p>
+  <input [(ngModel)]="name" placeholder="">
+
+  <p class="label">Time</p>
+<input type="time" [(ngModel)]="time" placeholder="">
+
+  <p class="label">Date</p>
+<input type="date" [(ngModel)]="date" placeholder="">
+
+<p class="label">Email Address</p>
+<input [(ngModel)]="email" placeholder="example@email.com">
+
+  <p class="label">Event Type</p>
+<select [(ngModel)]="type">
+  <option value="" disabled selected>Select event type</option>
+  <option value="work">Work</option>
+  <option value="birthday">Birthday</option>
+  <option value="anniversary">Anniversary</option>
+</select>
+
+  <p class="label">Number Of Guests</p>
+  <input [(ngModel)]="guests" placeholder="">
+
+  <p class="label">Details</p>
+  <input [(ngModel)]="details" placeholder="">
+ </div>
+<button class="btn" (click)="submitEvent()">Book Event</button>
+ </div>
+</ion-content>

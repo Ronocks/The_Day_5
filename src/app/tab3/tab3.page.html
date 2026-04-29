@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+ 
+  <ion-toolbar>
+    <ion-title>
+        <img src="\assets\icon\Theday5.jpg"/>
+    </ion-title>
+     
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Reservation</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <h2 class="title">Reservation</h2>
+  <div class="t3">
+    <div class="t2">
+  <p class="label">Full Name</p>
+  <input [(ngModel)]="name" placeholder="">
+<p class="label">Order</p>
+  <input [(ngModel)]="order" placeholder="">
+  <p class="label">Time</p>
+<input type="time" [(ngModel)]="time" placeholder="">
+  <p class="label">Date</p>
+<input type="date" [(ngModel)]="date" placeholder="">
+<p class="label">Email Address</p>
+<input [(ngModel)]="email" placeholder="example@email.com">
+<br>
+    </div>
+<button class="btn" (click)="submitBooking()">Confirm </button>
+ </div>
+</ion-content>
+

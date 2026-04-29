@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+   <ion-title>
+        <img src="\assets\icon\Theday5.jpg"/>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">tab4</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="tab4">
+  <h2 class="title">About Us</h2>
+  <br>
+  <div class="text">
+  <h3 class="title">Our History</h3>
+  <p>So who the heck are we and why are we called The Day 5? The Day 5 is a very youthy way of portraying Fridays which symbolises the freedom in the week most would have leading into the weekend, must like that relieveing cup of coffee in the morning</p>
+  <h3 class="title">What Give Our Coffee That Day 5</h3>
+<p>All our coffee beans are grown and reared here in Ireland by local farmers as well as our bread, vegetables and pastries provided to pass that legitamite Irish quality you know</p>
+  <h3 class="title">What To Expect From Us?</h3>
+  <p>Along with top quality and efficient service with a smile, we want to give you the benefit of rewards, events and opportunities as you navigate and follow through our app</p>
+  <br>
+  </div>
+  <h2 class="title">Gallery</h2>
+  
+  <ion-grid>
+  <ion-row>
+    <ion-col>
+      <img src="https://media.istockphoto.com/id/2168005130/photo/heart-shaped-latte-art-in-a-white-cup-with-coffee-beans-isolated-on-wooden-table-side-view-of.jpg?s=612x612&w=0&k=20&c=hQmWzRmUpVsrEVD97Dwy7jxk6FmRJhKbA2VNh_D5V9s=" >
+    </ion-col>
+    <ion-col>      <img src="https://media.istockphoto.com/id/474103381/photo/look-at-those-skilled-hands.jpg?s=612x612&w=0&k=20&c=ONwXGwhVj0VXAVTg1NuyvCJ7YcqwJ6e_7TU5h0vCeNY=" >
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img src="https://images.ctfassets.net/txhaodyqr481/5zTTY7J76zFaSy4j4qeNZE/119faebafbee0421e4ff5253b9dd9b9b/pexels-afta-putta-gunawan-683039.jpg?fm=jpg&q=85&fl=progressive">
+    </ion-col>
+  </ion-row>
+</ion-grid>
+ 
+  <ion-grid>
+  <ion-row>
+    <ion-col>
+      <img src="https://media.istockphoto.com/id/1132918917/photo/multi-ethnic-musicians-singing-playing-guitar-accordian-peruvian-cajon-in-cafe.jpg?s=612x612&w=0&k=20&c=FJc7_h28ObdnEx7kuFHTvvwcXby57cBe8D47N0J7QDc=" >
+    </ion-col>
+    <ion-col><img src="https://media.istockphoto.com/id/816833592/photo/young-friends-having-a-great-time-in-cafe.jpg?s=170667a&w=0&k=20&c=_EppSrCIQgSwHuSNzmrnblJveS-53q5aIkMd1DiY3q8=">
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img src="https://allaroundireland.ie/wp/wp-content/uploads/2018/12/Christmas-in-Dublin-3.jpg" >
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<br>
+  <h2 class="title">Blog</h2>
+  <br>
+  <div *ngFor="let i of data">
+      <app-blog [blogs] = 'i'></app-blog>
+       
+    </div>
+  </div>
+</ion-content>

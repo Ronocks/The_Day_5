@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+ <ion-buttons slot="start">
+   <ion-back-button></ion-back-button>
+</ion-buttons>
+  <ion-toolbar>
+    <ion-title>
+      <img src="\assets\icon\Theday5.jpg"/>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">viewevents</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<div class="con">
+  <h2 class="title">Welcome</h2>
+<p *ngIf="userEmail" class="word"> {{ userEmail }}</p>
+
+<h3 class="title">Your Events</h3>
+
+<div *ngIf="events.length === 0">
+  <p>No bookings found.</p>
+</div>
+
+<div *ngFor="let event of events" class="event-card">
+  <p><strong>Name:</strong> {{ event.eventInfo.name }}</p>
+  <p><strong>Email:</strong> {{ event.eventInfo.email }}</p>
+  <p><strong>Type:</strong> {{ event.eventInfo.type }}</p>
+  <p><strong>Guests:</strong> {{ event.eventInfo.guests }}</p>
+    <p><strong>Details:</strong> {{ event.eventInfo.details}}</p>
+  <p><strong>Date:</strong> {{ event.eventInfo.date }}</p>
+  <p><strong>Time:</strong> {{ event.eventInfo.time }}</p>
+</div>
+</div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "TheDayFive",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+   <ion-title>
+        <img src="\assets\icon\Theday5.jpg"/>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">tab4</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="lr">
+  <h2 class="title">Login/Register</h2>
+  <br>
+<input type="text" placeholder="Email" #email/>
+<br>
+<input type="password" placeholder="Password" #pass/>
+<br>
+<p *ngIf="error !== ''">{{error}}</p>
+<ion-button (click)="login(email.value, pass.value)" >Login</ion-button>
+<br>
+  <p>    Dont have an account with us?</p>
+   <ion-button class="buttonreg" fill="view" routerLink="/register">register an account here</ion-button>
+  </div>
+</ion-content>

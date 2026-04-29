@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+ <ion-buttons slot="start">
+   <ion-back-button></ion-back-button>
+</ion-buttons>
+  <ion-toolbar>
+    <ion-title>
+      <img src="\assets\icon\Theday5.jpg"/>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">viewbook</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<div class="con">
+  <h2 class="title">Welcome</h2>
+<p *ngIf="userEmail" class="word"> {{ userEmail }}</p>
+
+<h3 class="title">Your Reservations</h3>
+
+<div *ngIf="bookings.length === 0">
+  <p>No bookings found.</p>
+</div>
+
+<div *ngFor="let booking of bookings" class="booking-card">
+  <p><strong>Name:</strong> {{ booking.book.name }}</p>
+  <p><strong>Order:</strong> {{ booking.book.order }}</p>
+  <p><strong>Date:</strong> {{ booking.book.date }}</p>
+  <p><strong>Time:</strong> {{ booking.book.time }}</p>
+</div>
+</div>
+</ion-content>
